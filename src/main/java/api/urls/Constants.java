@@ -27,7 +27,7 @@ public class Constants {
     
     /** Credentials */
     public static final String GRANT_TYPE = "client_credentials";
-    public static final String CLIENT_ID = "mtn-client";
-    public static final String CLIENT_SECRET = "2adf4714-cb7c-4642-a592-4db355091742";
+    public static final String CLIENT_ID = "mtnttng-client";
+    public static final String CLIENT_SECRET = "2a23df47wer14-cb7c-4642-a592-4d44522b355091742";
 
 }
