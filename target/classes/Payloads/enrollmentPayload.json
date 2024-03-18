@@ -1,0 +1,46 @@
+{
+    "originator": "Whatsapp",
+    "effectiveDate": "2024-01-30T14:02:57.495Z",
+    "termsAndConditionIndicator": true,
+    "agentInfo": {
+        "agentCode": "",
+        "agencyCode": ""
+    },
+    "policyHolder": {
+        "dateOfBirth": "1989-01-01",
+        "msisdn": "27058100004",
+        "firstName": "Ayo",
+        "lastName": "User",
+        "idType": "9W",
+        "idNumber": "8901012145907",
+        "idCountryOfIssue": "7",
+        "language": "English",
+        "gender": "M",
+        "sanctionStatus": "PASS"
+    },
+    "product": {
+        "productCode": "CARE365MYFAPH",
+        "productName": "MyMTN Prepaid Funeral Khava",
+        "productVersionLabel": "string",
+        "productTypeCode": "CARE365MYFAPH",
+        "coverPeriod": 6,
+        "benefits": [
+            {
+                "benefit": {
+                    "benefitCode": "CARE365MYFAPH",
+                    "premiumAmount": "120"
+                }
+            }
+        ],
+        "paymentType": {
+            "paymentType": "1",
+            "paymentStatus": "string",
+            "billingDate": "1",
+            "sourceOfFunds": "SAVING"
+        }
+    },
+    "kycInfo": {
+        "kycStatus": "TRUE",
+        "kycConfirmation": "TRUE"
+    }
+}
