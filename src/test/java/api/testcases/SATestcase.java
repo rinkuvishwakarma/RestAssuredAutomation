@@ -24,17 +24,17 @@ public class SATestcase {
 	
 	@Test (enabled = true)
 	public void getRates() {
-		String getRateURL = "https://snap-dev-feed.ayo4u.com/api/1/rest/feed-master/queue/aYoDev/apim/zaf-mega"+UrlsRoutes.getRateURLEndPt;
+		String getRateURL = "your URL;
 		
 		String tokenCheck = CommonFunctions.auth();
 		RequestSpecification request = given()
-				.header("x-ebao-tenant-id", "AYO-MTN-ZAF")
+				.header("id", "O-N-ZA")
 				.header("transactionId", CommonFunctions.uuid())
 				.header("transactionDate", CommonFunctions.currentDate())
-				.header("countryCode", "ZAF")
+				.header("countryCode", "ZA")
 				.header("Authorization", "Bearer "+tokenCheck)
 				.queryParam("coverPeriod", "6")
-				.queryParam("productCode", "CARE365MYFAPH");
+				.queryParam("productCode", "65MY");
 				
 	Response response = request.when()
 			.get(getRateURL);
@@ -51,7 +51,7 @@ public class SATestcase {
 		String jsonFilePath = Constants.PATH_TO_PAYLOAD;
 		File jsonData = new File(jsonFilePath);
 		String clientMsisdn = CommonFunctions.generateMSISDN();
-		String postEnrolURL = "https://snap-dev-feed.ayo4u.com/api/1/rest/feed-master/queue/aYoDev/apim/zaf-mega"+UrlsRoutes.postEnrolzEndPt;
+		String postEnrolURL = "your URL;
 		String tokenCheck = CommonFunctions.auth();
 		
 		ObjectMapper objectMapper = new ObjectMapper();
@@ -61,10 +61,10 @@ public class SATestcase {
 		objectNode.with("policyHolder").put("idNumber", "1987-02-12");
 		
 		RequestSpecification request = given()
-				.header("x-ebao-tenant-id","AYO-MTN-ZAF")
+				.header("x-ebao-tenant-id","O-N-ZA")
 				.header("transactionId", CommonFunctions.uuid())
 				.header("transactionDate", CommonFunctions.currentDate())
-				.header("countryCode", "ZAF")
+				.header("countryCode", "ZA")
 				.header("Authorization", "Bearer "+tokenCheck)
 				.body(objectNode);
 		
