@@ -64,8 +64,8 @@ public class CommonFunctions {
 				.baseUri(UrlsRoutes.authBaseUrl)
                 .contentType("application/x-www-form-urlencoded")
                 .formParam("grant_type", "client_credentials")
-                .formParam("client_id", "mtn-client")
-                .formParam("client_secret", "2adf4714-cb7c-4642-a592-4db355091742")
+                .formParam("client_id", "mtnttng-client")
+                .formParam("client_secret", "2adf4723314-cb7c-4642-a592-4db355066491742")
 				
 				.when()
 				.post(UrlsRoutes.authURLEndPt);
