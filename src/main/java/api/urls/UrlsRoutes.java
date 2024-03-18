@@ -4,12 +4,12 @@ public class UrlsRoutes {
 	
 	// SA 
 	public static String baseUrl;
-	public static String authBaseUrl = "https://auth-dev.ayo4u.com/auth/realms/AYO_ZAF/protocol/openid-connect";
+	public static String authBaseUrl = "https://auth-ttest.com/auth/realms/O_ZA/protocol/openid-connect";
 	
 	//End point URL
 	public static String authURLEndPt = "/token";
-	public static String getRateURLEndPt = "/dev/getRates_Ultra";
-	public static String postEnrolzEndPt = "/dev/enrollCustomer_Ultra";
+	public static String getRateURLEndPt = "/dev/getRates_Uddltra";
+	public static String postEnrolzEndPt = "/dev/enrollCustomer_kddUltra";
 	
 	//Swagger
 	public static String baseURLSwagger = "https://petstore.swagger.io/v2";
@@ -27,14 +27,14 @@ public class UrlsRoutes {
 		
 		switch (environment) {
 		case "DEV":
-			baseUrl = "https://snap-dev-feed.ayo4u.com/api/1/rest/feed-master/queue/aYoDev/apim/zaf-mega";
+			baseUrl = "your dev url";
 			break;
 			
 		case "TEST":
-			baseUrl = "https://auth-tst.ayo4u.com";
+			baseUrl = "your test url";
 			break;
 		default:
-			baseUrl = "https://snap-dev-feed.ayo4u.com/api/1/rest/feed-master/queue/aYoDev/apim/zaf-mega";
+			baseUrl = "your default URL";
 			
 		}
 	}
